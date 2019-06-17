@@ -6508,7 +6508,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.1524" layer="51"/>
 <wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.1524" layer="51"/>
 <wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.1524" layer="51"/>
-<circle x="-3" y="3" radius="0.1" width="0.2" layer="21"/>
+<circle x="-2.238" y="2.238" radius="0.1" width="0.2" layer="21"/>
 </package>
 <package name="CHARLESPAX_TC-MINI-CONNECTOR">
 <wire x1="-7.62" y1="6.35" x2="7.62" y2="6.35" width="0.127" layer="21"/>
@@ -6678,7 +6678,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <plain>
 <wire x1="0" y1="96.52" x2="248.92" y2="96.52" width="0.1524" layer="97" style="longdash"/>
 <text x="45.72" y="86.36" size="1.778" layer="97" font="vector">I2C Connections</text>
-<text x="88.9" y="177.8" size="1.778" layer="97" font="vector">TMP117 Temperature Sensor</text>
+<text x="88.9" y="177.8" size="1.778" layer="97" font="vector">MCP9600 Thermocouple EMF to Temperature Converter</text>
 <text x="167.894" y="11.43" size="2.54" layer="94" font="vector">Fischer Moseley</text>
 <text x="137.16" y="167.64" size="1.778" layer="97" font="vector" rot="MR0">Clear Jumper to remove 
 I2C Pull-ups from bus</text>
