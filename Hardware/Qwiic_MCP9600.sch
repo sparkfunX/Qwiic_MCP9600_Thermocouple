@@ -7096,6 +7096,16 @@ circuit boards.  (OMEGA PCC-SMP)&lt;br /&gt;
 <text x="167.894" y="11.43" size="2.54" layer="94" font="vector">Fischer Moseley</text>
 <text x="149.86" y="167.64" size="1.778" layer="97" font="vector" rot="MR0">Clear Jumper to remove 
 I2C Pull-ups from bus</text>
+<text x="76.2" y="114.3" size="1.524" layer="97" font="vector">MCP9600 Address Selection:
+
+0x60: ADDR tied to GND
+0x61: R3 = 10k, R2 = 2.2k
+0x62: R3 = 10k, R2 = 4.3k 
+0x63: R3 = 10k, R2 = 7.5k
+0x64: R3 = 10k, R2 = 13k 
+0x65: R3 = 10k, R2 = 22k
+0x66: R3 = 10k, R2 = 43k 
+0x66: ADDR Pin Tied to VDD </text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
