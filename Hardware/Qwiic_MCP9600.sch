@@ -7080,7 +7080,7 @@ circuit boards.  (OMEGA PCC-SMP)&lt;br /&gt;
 <part name="JP8" library="SparkFun" deviceset="STAND-OFF" device=""/>
 <part name="JP9" library="SparkFun" deviceset="STAND-OFF" device=""/>
 <part name="I2C" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_2-NC_TRACE" device="_SILK" value=""/>
-<part name="U$16" library="MCP9600" deviceset="MCP9600" device="-SMD"/>
+<part name="U16" library="MCP9600" deviceset="MCP9600" device="-SMD"/>
 <part name="R3" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
 <part name="GND8" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -7193,7 +7193,7 @@ I2C Pull-ups from bus</text>
 <attribute name="NAME" x="159.131" y="151.384" size="1.778" layer="95" font="vector" rot="MR0"/>
 <attribute name="VALUE" x="157.861" y="152.4" size="1.778" layer="96" font="vector" rot="MR270" align="top-left"/>
 </instance>
-<instance part="U$16" gate="G$1" x="190.5" y="137.16" smashed="yes">
+<instance part="U16" gate="G$1" x="190.5" y="137.16" smashed="yes">
 <attribute name="NAME" x="180.34" y="124.46" size="1.778" layer="95"/>
 <attribute name="VALUE" x="180.34" y="148.082" size="1.778" layer="96"/>
 </instance>
@@ -7252,7 +7252,7 @@ I2C Pull-ups from bus</text>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="175.26" y1="127" x2="175.26" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="129.54" x2="177.8" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="U$16" gate="G$1" pin="GND"/>
+<pinref part="U16" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
@@ -7298,7 +7298,7 @@ I2C Pull-ups from bus</text>
 <pinref part="SUPPLY6" gate="G$1" pin="3.3V"/>
 <wire x1="175.26" y1="147.32" x2="175.26" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="144.78" x2="177.8" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="U$16" gate="G$1" pin="VDD"/>
+<pinref part="U16" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
 <pinref part="I2C" gate="G$1" pin="2"/>
@@ -7333,7 +7333,7 @@ I2C Pull-ups from bus</text>
 <wire x1="144.78" y1="139.7" x2="165.1" y2="139.7" width="0.1524" layer="91"/>
 <junction x="165.1" y="139.7"/>
 <label x="144.78" y="139.7" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<pinref part="U$16" gate="G$1" pin="SDA"/>
+<pinref part="U16" gate="G$1" pin="SDA"/>
 <wire x1="165.1" y1="139.7" x2="177.8" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -7360,7 +7360,7 @@ I2C Pull-ups from bus</text>
 <wire x1="144.78" y1="137.16" x2="149.86" y2="137.16" width="0.1524" layer="91"/>
 <junction x="149.86" y="137.16"/>
 <label x="144.78" y="137.16" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<pinref part="U$16" gate="G$1" pin="SCL"/>
+<pinref part="U16" gate="G$1" pin="SCL"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -7381,7 +7381,7 @@ I2C Pull-ups from bus</text>
 <wire x1="124.46" y1="134.62" x2="121.92" y2="134.62" width="0.1524" layer="91"/>
 <junction x="124.46" y="134.62"/>
 <label x="121.92" y="134.62" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<pinref part="U$16" gate="G$1" pin="ADDR"/>
+<pinref part="U16" gate="G$1" pin="ADDR"/>
 <wire x1="137.16" y1="134.62" x2="177.8" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="124.46" y1="137.16" x2="124.46" y2="134.62" width="0.1524" layer="91"/>
@@ -7410,21 +7410,21 @@ I2C Pull-ups from bus</text>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="U$16" gate="G$1" pin="V+"/>
+<pinref part="U16" gate="G$1" pin="V+"/>
 <pinref part="JP2" gate="G$1" pin="+"/>
 <wire x1="203.2" y1="144.78" x2="218.44" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="U$16" gate="G$1" pin="V-"/>
+<pinref part="U16" gate="G$1" pin="V-"/>
 <pinref part="JP2" gate="G$1" pin="-"/>
 <wire x1="203.2" y1="142.24" x2="218.44" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ALRT1" class="0">
 <segment>
-<pinref part="U$16" gate="G$1" pin="ALERT1"/>
+<pinref part="U16" gate="G$1" pin="ALERT1"/>
 <wire x1="203.2" y1="137.16" x2="208.28" y2="137.16" width="0.1524" layer="91"/>
 <label x="208.28" y="137.16" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -7436,7 +7436,7 @@ I2C Pull-ups from bus</text>
 </net>
 <net name="ALRT2" class="0">
 <segment>
-<pinref part="U$16" gate="G$1" pin="ALERT2"/>
+<pinref part="U16" gate="G$1" pin="ALERT2"/>
 <wire x1="203.2" y1="134.62" x2="208.28" y2="134.62" width="0.1524" layer="91"/>
 <label x="208.28" y="134.62" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -7448,7 +7448,7 @@ I2C Pull-ups from bus</text>
 </net>
 <net name="ALRT3" class="0">
 <segment>
-<pinref part="U$16" gate="G$1" pin="ALERT3"/>
+<pinref part="U16" gate="G$1" pin="ALERT3"/>
 <wire x1="203.2" y1="132.08" x2="208.28" y2="132.08" width="0.1524" layer="91"/>
 <label x="208.28" y="132.08" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -7460,7 +7460,7 @@ I2C Pull-ups from bus</text>
 </net>
 <net name="ALRT4" class="0">
 <segment>
-<pinref part="U$16" gate="G$1" pin="ALERT4"/>
+<pinref part="U16" gate="G$1" pin="ALERT4"/>
 <wire x1="203.2" y1="129.54" x2="208.28" y2="129.54" width="0.1524" layer="91"/>
 <label x="208.28" y="129.54" size="1.27" layer="95" xref="yes"/>
 </segment>
