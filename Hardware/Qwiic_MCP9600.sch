@@ -3,7 +3,7 @@
 <eagle version="9.4.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -6967,8 +6967,8 @@ circuit boards.</description>
 <wire x1="-5.08" y1="2.54" x2="1.27" y2="2.54" width="0.4064" layer="94"/>
 <pin name="+" x="5.08" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="-" x="5.08" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-5.08" y="3.302" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<text x="-5.08" y="3.302" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <text x="5.08" y="-5.08" size="1.778" layer="94" align="center">+</text>
 <text x="5.08" y="2.54" size="1.778" layer="94" align="center">-</text>
 </symbol>
@@ -7094,8 +7094,8 @@ circuit boards.  (OMEGA PCC-SMP)&lt;br /&gt;
 <text x="45.72" y="86.36" size="1.778" layer="97" font="vector">I2C Connections</text>
 <text x="88.9" y="177.8" size="1.778" layer="97" font="vector">MCP9600 Thermocouple EMF to Temperature Converter</text>
 <text x="167.894" y="11.43" size="2.54" layer="94" font="vector">Fischer Moseley</text>
-<text x="149.86" y="167.64" size="1.778" layer="97" font="vector" rot="MR0">Clear Jumper to remove 
-I2C Pull-ups from bus</text>
+<text x="149.86" y="167.64" size="1.778" layer="97" font="vector" rot="MR0">Clear jumper to remove 
+I2C pullups</text>
 <text x="76.2" y="114.3" size="1.524" layer="97" font="vector">MCP9600 Address Selection:
 
 0x60: ADDR tied to GND
@@ -7104,8 +7104,9 @@ I2C Pull-ups from bus</text>
 0x63: R3 = 10k, R2 = 7.5k
 0x64: R3 = 10k, R2 = 13k 
 0x65: R3 = 10k, R2 = 22k
-0x66: R3 = 10k, R2 = 43k 
+0x66: R3 = 10k, R2 = 43k (default)
 0x66: ADDR Pin Tied to VDD </text>
+<text x="239.522" y="7.366" size="2.54" layer="94">x01</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -7204,8 +7205,8 @@ I2C Pull-ups from bus</text>
 <attribute name="VALUE" x="157.861" y="152.4" size="1.778" layer="96" font="vector" rot="MR270" align="top-left"/>
 </instance>
 <instance part="U16" gate="G$1" x="190.5" y="137.16" smashed="yes">
-<attribute name="NAME" x="180.34" y="124.46" size="1.778" layer="95"/>
-<attribute name="VALUE" x="180.34" y="148.082" size="1.778" layer="96"/>
+<attribute name="NAME" x="180.34" y="124.46" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="180.34" y="148.082" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="R3" gate="G$1" x="124.46" y="142.24" smashed="yes" rot="R90">
 <attribute name="NAME" x="122.936" y="142.24" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
@@ -7384,17 +7385,17 @@ I2C Pull-ups from bus</text>
 <segment>
 <pinref part="JP1" gate="G$1" pin="1"/>
 <wire x1="137.16" y1="132.08" x2="137.16" y2="134.62" width="0.1524" layer="91"/>
-<junction x="137.16" y="134.62"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="137.16" y1="134.62" x2="124.46" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="134.62" x2="124.46" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="134.62" x2="121.92" y2="134.62" width="0.1524" layer="91"/>
 <junction x="124.46" y="134.62"/>
 <label x="121.92" y="134.62" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<pinref part="U16" gate="G$1" pin="ADDR"/>
-<wire x1="137.16" y1="134.62" x2="177.8" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="124.46" y1="137.16" x2="124.46" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="U16" gate="G$1" pin="ADDR"/>
+<wire x1="137.16" y1="134.62" x2="177.8" y2="134.62" width="0.1524" layer="91"/>
+<junction x="137.16" y="134.62"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -7413,11 +7414,6 @@ I2C Pull-ups from bus</text>
 <wire x1="165.1" y1="154.94" x2="162.56" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$8" class="0">
-<segment>
-<wire x1="154.94" y1="134.62" x2="152.4" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="U16" gate="G$1" pin="V+"/>
@@ -7432,52 +7428,52 @@ I2C Pull-ups from bus</text>
 <wire x1="203.2" y1="142.24" x2="218.44" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="ALRT1" class="0">
-<segment>
-<pinref part="U16" gate="G$1" pin="ALERT1"/>
-<wire x1="203.2" y1="137.16" x2="208.28" y2="137.16" width="0.1524" layer="91"/>
-<label x="208.28" y="137.16" size="1.27" layer="95" xref="yes"/>
-</segment>
+<net name="!ALT1" class="0">
 <segment>
 <wire x1="68.58" y1="40.64" x2="66.04" y2="40.64" width="0.1524" layer="91"/>
 <label x="66.04" y="40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J4" gate="J1" pin="1"/>
 </segment>
-</net>
-<net name="ALRT2" class="0">
 <segment>
-<pinref part="U16" gate="G$1" pin="ALERT2"/>
-<wire x1="203.2" y1="134.62" x2="208.28" y2="134.62" width="0.1524" layer="91"/>
-<label x="208.28" y="134.62" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="68.58" y1="38.1" x2="66.04" y2="38.1" width="0.1524" layer="91"/>
-<label x="66.04" y="38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J4" gate="J1" pin="2"/>
+<pinref part="U16" gate="G$1" pin="ALERT1"/>
+<wire x1="203.2" y1="137.16" x2="208.28" y2="137.16" width="0.1524" layer="91"/>
+<label x="208.28" y="137.16" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="ALRT3" class="0">
-<segment>
-<pinref part="U16" gate="G$1" pin="ALERT3"/>
-<wire x1="203.2" y1="132.08" x2="208.28" y2="132.08" width="0.1524" layer="91"/>
-<label x="208.28" y="132.08" size="1.27" layer="95" xref="yes"/>
-</segment>
+<net name="!ALT3" class="0">
 <segment>
 <wire x1="68.58" y1="35.56" x2="66.04" y2="35.56" width="0.1524" layer="91"/>
 <label x="66.04" y="35.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J4" gate="J1" pin="3"/>
 </segment>
+<segment>
+<pinref part="U16" gate="G$1" pin="ALERT3"/>
+<wire x1="203.2" y1="132.08" x2="208.28" y2="132.08" width="0.1524" layer="91"/>
+<label x="208.28" y="132.08" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
-<net name="ALRT4" class="0">
+<net name="!ALT4" class="0">
+<segment>
+<wire x1="68.58" y1="33.02" x2="66.04" y2="33.02" width="0.1524" layer="91"/>
+<label x="66.04" y="33.02" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J4" gate="J1" pin="4"/>
+</segment>
 <segment>
 <pinref part="U16" gate="G$1" pin="ALERT4"/>
 <wire x1="203.2" y1="129.54" x2="208.28" y2="129.54" width="0.1524" layer="91"/>
 <label x="208.28" y="129.54" size="1.27" layer="95" xref="yes"/>
 </segment>
+</net>
+<net name="!ALT2" class="0">
 <segment>
-<wire x1="68.58" y1="33.02" x2="66.04" y2="33.02" width="0.1524" layer="91"/>
-<label x="66.04" y="33.02" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J4" gate="J1" pin="4"/>
+<wire x1="68.58" y1="38.1" x2="66.04" y2="38.1" width="0.1524" layer="91"/>
+<label x="66.04" y="38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J4" gate="J1" pin="2"/>
+</segment>
+<segment>
+<pinref part="U16" gate="G$1" pin="ALERT2"/>
+<wire x1="203.2" y1="134.62" x2="208.28" y2="134.62" width="0.1524" layer="91"/>
+<label x="208.28" y="134.62" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
