@@ -7105,7 +7105,7 @@ I2C pullups</text>
 0x64: R3 = 10k, R2 = 13k 
 0x65: R3 = 10k, R2 = 22k
 0x66: R3 = 10k, R2 = 43k (default)
-0x66: ADDR Pin Tied to VDD </text>
+0x67: ADDR Pin Tied to VDD </text>
 <text x="239.522" y="7.366" size="2.54" layer="94">x01</text>
 </plain>
 <instances>

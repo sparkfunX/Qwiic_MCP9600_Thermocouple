@@ -1,41 +1,22 @@
-SparkFun <PRODUCT NAME>
+SparkFun MCP9600 Thermocouple Amplifier
 ========================================
 
-![SparkFun Part Name](URL for picture of part)
+![SparkX MCP9600 Thermocouple Amplifier](https://media.tenor.com/images/47b81948be5023555549c01d88ae3289/tenor.gif)
 
-[*SparkFun Part Name (SKU)*](URL for product on Sparkfun.com)
+[*Thermocouple Amplifier (SPX-15508)*](URL for product on Sparkfun.com)
 
-<Basic description of the part.>
+The MCP9600 is an integrated thermocouple amplifier featuring a typical accuracy of ±0.5°C and a maximum accuracy of ±1.5°C, with support for many thermocouple types, conversion modes, and a configurable exponential moving average filter.
 
 Repository Contents
 -------------------
 
 * **/Documentation** - Data sheets, additional product information
-* **/Enclosure** - Enclosure files 
-* **/Firmware** - Example code 
 * **/Hardware** - Eagle design files (.brd, .sch)
-* **/Libraries** - Libraries for use with the <PRODUCT NAME>
 * **/Production** - Production panel files (.brd)
-* **/Software** - Related software for the <PRODUCT NAME>
 
 Documentation
 --------------
-* **[Library](GitHub library URL)** - <LANGUAGE> library for the <PRODUCT NAME>.
-* **[Hookup Guide](Learn.SparkFun URL)** - Basic hookup guide for the <PRODUCT NAME>.
-* **[SparkFun Fritzing repo](https://github.com/sparkfun/Fritzing_Parts)** - Fritzing diagrams for SparkFun products.
-* **[SparkFun 3D Model repo](https://github.com/sparkfun/3D_Models)** - 3D models of SparkFun products. 
-* **[SparkFun Graphical Datasheets](https://github.com/sparkfun/Graphical_Datasheets)** -Graphical Datasheets for various SparkFun products.
-
-Product Versions
-----------------
-* [Part SKU](part URL)- Basic part and short description here
-* [Retail part SKU](retail URL)- Retail packaging of standard description here
-* [Any other parts this repo covers](any other URLs) - Description of said parts
-
-Version History
----------------
-* [vExxFxxZxxHxxLxxSxx](URL for tag specific to this version) - Description 
-* [vEyyFyyZyyHyyLyySyy](URL for tag specific to this version) - Description
+* **[SparkFun MCP9600 Arduino Library](https://github.com/sparkfun/SparkFun_MCP9600_Arduino_Library)** - Arduino library for the MCP9600.
 
 License Information
 -------------------
