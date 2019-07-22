@@ -3,7 +3,7 @@ SparkFun MCP9600 Thermocouple Amplifier
 
 ![SparkX MCP9600 Thermocouple Amplifier](https://media.tenor.com/images/47b81948be5023555549c01d88ae3289/tenor.gif)
 
-[*Thermocouple Amplifier (SPX-15508)*](URL for product on Sparkfun.com)
+[*Thermocouple Amplifier (SPX-15508)*](https://www.sparkfun.com/products/15508)
 
 The MCP9600 is an integrated thermocouple amplifier featuring a typical accuracy of ±0.5°C and a maximum accuracy of ±1.5°C, with support for many thermocouple types, conversion modes, and a configurable exponential moving average filter.
 
