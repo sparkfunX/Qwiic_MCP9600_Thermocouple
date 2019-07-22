@@ -1,7 +1,7 @@
 SparkFun MCP9600 Thermocouple Amplifier
 ========================================
 
-![SparkX MCP9600 Thermocouple Amplifier](https://media.tenor.com/images/47b81948be5023555549c01d88ae3289/tenor.gif)
+![SparkX MCP9600 Thermocouple Amplifier](https://cdn.sparkfun.com//assets/parts/1/4/1/0/0/15508-Qwiic_Thermocouple_Amplifier_-_MCP9600-01.jpg)
 
 [*Thermocouple Amplifier (SPX-15508)*](https://www.sparkfun.com/products/15508)
 
